@@ -3,6 +3,7 @@ body {
             margin: 0;
             padding: 0;
             background-size: cover;
+            background-color: #9a470f;
             background-position: center;
             display: flex;
             justify-content: center;
@@ -11,21 +12,17 @@ body {
             color: #fff;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for readability */
+            background-color: #c67421; /* Semi-transparent background for readability */
             padding: 40px;
             border-radius: 15px;
             text-align: center;
             max-width: 600px;
             width: 100%;
         }
+        
         h1 {
             font-size: 36px;
             margin-bottom: 30px;
-        }
-        .logo {
-            width: 120px;
-            border-radius: 50%;
-            margin-bottom: 20px;
         }
         .link {
             display: flex;
@@ -33,8 +30,8 @@ body {
             justify-content: center;
             padding: 15px;
             margin: 10px 0;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #f5b603;
+            color: #000000;
             text-decoration: none;
             border-radius: 10px;
             font-size: 18px;
@@ -45,8 +42,8 @@ body {
             font-size: 20px;
         }
         .link:hover {
-            background-color: #45a049;
+            background-color: #fbc222;
         }
         .link:active {
-            background-color: #388e3c;
+            background-color: #fbc222;
         }
