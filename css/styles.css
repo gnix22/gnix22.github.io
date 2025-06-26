@@ -26,7 +26,6 @@ main{
 
 h1{
 font-size: 36px;
-margin-bottom: 30px;
 }
 
 li{
@@ -38,6 +37,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 16px;
+}
+
 .home-main{
     display: flex;
     justify-content: center;
@@ -45,7 +48,7 @@ a{
     min-height: 100vh;
     padding: 20px;
 }
-
+/*hamburger nav responsiveness*/
 .navbar{
     min-height: 70px;
     display: flex;
@@ -125,8 +128,17 @@ a{
     .nav-menu.active{
         left: 0;
     }
-}
 
+    .proj-main{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+/*landing page section*/
 .landing-page{
 background-color: #c67421; /* Semi-transparent background for readability */
 padding: 40px;
@@ -159,4 +171,56 @@ background-color: white;
 
 .link:active{
 background-color: #fbc222;
+}
+/*project page section*/
+.proj-sub-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.proj-header{
+    margin-top: 20px;
+}
+
+.proj-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.proj-intro{
+    display: block;
+    width: 75%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.github{
+    width: 2%;
+    margin: 0 5px;
+    filter: invert(100%)
+}
+/*project main content*/ 
+.proj-main{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nixos-info-section{
+    width: 50%;
+
+}
+
+.snippet-heading{
+    color: #f5b603;
+}
+
+.nixos-config-link{
+    color: #f5b603;
 }

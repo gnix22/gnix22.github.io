@@ -7,9 +7,59 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <main>
-        <H1>Under Construction</H1>
-        <a href="index.html" class="link">Please click me to go back</a>
-    </main>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-brand">Garrett Nix</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="music.html" class="nav-link">Music</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="proj-sub-header">
+        <H1 class="proj-header"><u>Projects</u></H1>
+        <a href="https://github.com/gnix22" class="proj-link">
+            <img src="img/github_logo.svg" alt="Github Logo" class="github">
+        </a>
+        <p class="proj-intro">
+            This page serves as a way to show off some of my personal 
+            projects, either personal or professional that I'm able to
+            post. Most of the projects seen here will be related to
+            mathematics projects, coding, or really anything that I find
+            interesting, and will give a brief synopsis to those projects.
+            I hope you find the content here interesting, and that you learn
+            something new.
+        </p>
+    </div>
+    <div class="proj-main">
+        <div class="nixos-info-section">
+            <h3 class="snippet-heading">
+                My NixOS Configuration
+            </h3>
+            <p class="nixos-text">
+                This project was started with the help of two very good
+                friends of mine. For context, NixOS (no relation to me) is a free and open-source
+                Linux distribution known for its reproducibility and portability.
+                This is achieved by using immutable design, and an atomic update model.
+                The distribution uses the Nix language, which is used in packages
+                recipes and configurations. The language itself is functional, meaning
+                that each nix file is a function, that can be imported for use in other
+                such files <sup><a href="https://nixos.org/~eelco/pubs/phd-thesis.pdf">[1]</a></sup>.
+                For more information, feel free to check out my repository 
+                <a href="https://github.com/gnix22/NixOSConfig" class="nixos-config-link">here</a>.
+            </p>
+        </div>
+        <div>
+            <h3>
+                placeholder
+            </h3>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
