@@ -9,7 +9,7 @@ header{
 }
 
 body{
-font-family: 'Times New Roman', Times, serif;
+font-family: 'Cambria', serif;
 background-color: #254441;
 color: #fff;
 }
@@ -25,7 +25,8 @@ main{
 }
 
 h1{
-font-size: 36px;
+    font-family: 'Gloock', serif;
+    font-size: 36px;
 }
 
 li{
@@ -65,6 +66,7 @@ p{
 }
 
 .nav-brand{
+    font-family: 'Gloock', serif;
     font-size: 2rem;
     color: #f5b603;
 }
@@ -179,15 +181,11 @@ background-color: #fbc222;
     align-items: center; 
 }
 
-.proj-header{
-    margin-top: 20px;
-}
-
-.proj-link{
+.proj-sec-header{
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-left: 1.5%;
 }
 
 .proj-intro{
@@ -198,15 +196,16 @@ background-color: #fbc222;
 }
 
 .github{
+    margin-top: 15px;
+    margin-left: 5px;
     width: 2%;
-    margin: 0 5px;
     filter: invert(100%)
 }
 /*project main content*/ 
 .proj-main{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 50% 30%;
+    grid-template-columns: 50% 10%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -214,10 +213,10 @@ background-color: #fbc222;
 
 .nixos-info-section{
     width: 50%;
-
 }
 
 .snippet-heading{
+    font-family: 'Gloock', serif;
     color: #f5b603;
 }
 
