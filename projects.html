@@ -29,37 +29,70 @@
             <img src="img/github_logo.svg" alt="Github Logo" class="github">
         </a>
     </div>
-    <div class="proj-sub-header">
-        <p class="proj-intro">
-            This page serves as a way to show off some of my personal 
-            projects, either personal or professional that I'm able to
-            post. Most of the projects seen here will be related to
-            mathematics projects, coding, or really anything that I find
-            interesting, and will give a brief synopsis to those projects.
-            I hope you find the content here interesting, and that you learn
-            something new.
-        </p>
-    </div>
+
     <div class="proj-main">
-        <div class="nixos-info-section">
-            <h3 class="snippet-heading">
-                My NixOS Configuration
-            </h3>
-            <p class="nixos-text">
-                This project was started with the help of two very good
-                friends of mine. For context, NixOS (no relation to me) is a free and open-source
-                Linux distribution known for its reproducibility and portability.
-                This is achieved by using immutable design, and an atomic update model.
-                The distribution uses the Nix language, which is used in packages
-                recipes and configurations. The language itself is functional, meaning
-                that each nix file is a function, that can be imported for use in other
-                such files <sup><a href="https://nixos.org/~eelco/pubs/phd-thesis.pdf">[1]</a></sup>.
-                For more information, feel free to check out my repository 
-                <a href="https://github.com/gnix22/NixOSConfig" class="nixos-config-link">here</a>.
-            </p>
+        <div class="nixos-card">
+            <div class="nixos-inner">
+                <div class="nixos-info-section-front">
+                    <h3 class="snippet-heading">
+                        My NixOS Configuration
+                    </h3>
+                </div>
+                <div class="nixos-info-section-back">
+                    <p class="card-text">
+                        This project was started with the help of two very good
+                        friends of mine. For context, NixOS (no relation to me) is a free and open-source
+                        Linux distribution known for its reproducibility and portability.
+                        This is achieved by using immutable design, and an atomic update model.
+                        The distribution uses the Nix language, which is used in packages
+                        recipes and configurations. The language itself is functional, meaning
+                        that each nix file is a function, that can be imported for use in other
+                        such files <sup><a href="https://nixos.org/~eelco/pubs/phd-thesis.pdf">[1]</a></sup>.
+                        For more information, feel free to check out my repository 
+                        <a href="https://github.com/gnix22/NixOSConfig" class="card-link">here</a>.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-            an image will go here
+
+        <div class="summer-research-card">
+            <div class="research-inner">
+                <div class="research-info-section-front">
+                    <h3 class="snippet-heading">
+                        Summer Research 2024-2025
+                    </h3>
+                </div>
+                <div class="research-info-section-back">
+                    <p class="card-text">
+                    In the both the summer of 2024 and 2025, I had the wonderful opporunity to be a research assistant 
+                    at Winthrop University in the SURE program. I worked on statistical theory, in specific I worked with
+                    generalizing the continuous Bernoulli distribution. The research was a lot of fun and I learned many 
+                    things in regard to mathematics, as well as how to manage time in the best way that I could. If you 
+                    are interested in seeing at least some of the code, I have created a repository that contains some files
+                    that were used during the <a href="https://github.com/gnix22/Summer_Research_2024" class="card-link">research</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pyxl-card">
+            <div class="pyxl-inner">
+                <div class="pyxl-info-section-front">
+                    <h3 class="snippet-heading">
+                        Pyxl
+                    </h3>
+                </div>
+                <div class="pyxl-info-section-back">
+                    <p class="card-text">
+                    This project marks my first CLI program I've ever created. The functionality is minimal at the moment
+                    as it was just something I created to be used for budget tracking. I plan to eventually add some
+                    statistical inference elements to the program to add more predictive capabilities in the long run. This
+                    project is still very much a work in progress, thus I don't have link yet, but it will be added when the 
+                    repository is made public.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="scripts/main.js"></script>
