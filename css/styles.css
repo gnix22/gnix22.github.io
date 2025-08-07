@@ -182,6 +182,21 @@ background-color: #fbc222;
     animation: 1.5s fadeInLeft;
 }
 
+.proj-intro-paragraph-container{
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: 1.5s fadeInLeft;
+}
+
+.proj-intro-paragraph{
+    font-size: 13.5pt;
+}
+
 .proj-intro{
     display: block;
     width: 75%;
@@ -212,7 +227,10 @@ background-color: #fbc222;
 }
 
 .proj-main{
-    margin-top: 100px;
+
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,12 +312,115 @@ background-color: #fbc222;
     overflow: hidden;
 }
 
-/* When shown, fade/slide into view */
+/* when shown, fade/slide into view */
 .info-section.revealed .card-text{
     opacity: 1;
     transform: translateY(0);
     max-height: 500px;
     margin-top: 20px;
+}
+
+/* photography page */
+.img-grid{
+    /* learned something new, variables can be made with -- convention */
+    --gap: 5px;
+    --num-cols: 4;
+    --row-height: 350px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.img-grid > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-grid-col-2{
+    grid-column: span 2;
+}
+
+.img-grid-row-2{
+    grid-row: span 2;
+}
+
+.photography-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img{
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.img:hover {transform: scale(1.01);}
+
+/* modal */
+.modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-img{
+    margin-top: 6em;
+    max-width: 900px;
+    max-height: 700px;
+    border: 2px solid #f1f1f1;
+}
+
+.modal-text{
+    margin-top: 1em;
+    animation: zoom 0.3s linear;
+}
+
+.close{
+    position: absolute;
+    transform: scale(2);
+    top: 1.5em;
+    right: 20%;
+    cursor: pointer;
+}
+
+.modal.appear{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal.appear .modal-img, 
+.modal.appear .modal-text{
+    animation: zoom 0.3s linear;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 /* responsive stuff */
